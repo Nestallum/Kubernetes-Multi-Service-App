@@ -2,7 +2,7 @@
 FROM python:3.12.2-alpine3.18
 
 # Définition du répertoire de travail pour le service 2
-WORKDIR /app/service2
+WORKDIR /app
 
 # Copie des fichiers de dépendances pour le service 2
 COPY requirements.txt .
