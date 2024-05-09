@@ -10,7 +10,7 @@ This repository houses a Dockerized multi-service web application featuring both
 You can find the Docker images on Docker Hub at the following link:
 - https://hub.docker.com/r/nestallum/back-end
 - https://hub.docker.com/r/nestallum/front-end
-- 
+
 ## Application Flow
 
 1. **Frontend Interaction:** Users interact with the frontend interface, which sends requests to the backend to fetch data.
