@@ -35,7 +35,7 @@ You can find the Docker images on Docker Hub at the following link:
 
 - `backend/`: Contains the code for the backend service, including Flask application files and database connection setup.
 - `frontend/`: Contains the code for the frontend service, including HTML, CSS, and JavaScript files for the user interface.
-- `database/`: Includes database schema files and scripts for initializing and managing the MySQL database.
+- `screenshots/`: Includes screenshot of the running app.
 
 ## Docker App run command
 To run this Python application in a browser, you can use the following command:
