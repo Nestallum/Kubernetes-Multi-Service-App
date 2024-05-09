@@ -3,11 +3,11 @@ import mysql.connector
 
 app = Flask(__name__)
 
-# Connexion à la base de données MySQL
+# Connect to the MySQL database
 db = mysql.connector.connect(
     host="host.docker.internal",
     user="root",
-    password="Grassim_80",
+    password="nestallum_db_2511",
     database="db"
 )
 
@@ -15,30 +15,30 @@ cursor = db.cursor()
 
 @app.route('/')
 def get_data():
-    # Exécutez une requête pour récupérer les données depuis la base de données
+    # Execute a query to fetch data from the database
     cursor.execute("SELECT * FROM db.students")
-    # Récupérez toutes les lignes de résultats
+    # Fetch all the result rows
     rows = cursor.fetchall()
     
-    # Créez des listes pour chaque champ
+    # Create lists for each field
     student_numbers = []
     first_names = []
     last_names = []
 
-    # Remplissez les listes avec les données de la base de données
+    # Populate the lists with data from the database
     for row in rows:
         student_numbers.append(row[0])
         first_names.append(row[1])
         last_names.append(row[2])
 
-    # Créez un dictionnaire avec les listes remplies
+    # Create a dictionary with the populated lists
     data = {
         'Student Number': student_numbers,
         'First Name': first_names,
         'Last Name': last_names
     }
 
-    # Retournez les données au format JSON
+    # Return the data in JSON format
     return jsonify(data)
 
 if __name__ == '__main__':
