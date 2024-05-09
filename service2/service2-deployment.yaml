@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: service2-deployment
+  name: service2
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: service2
     spec:
       containers:
-      - name: service2
-        image: nestallum/service2:latest
-        ports:
-        - containerPort: 8080
+        - image: nestallum/service2:1
+          imagePullPolicy: IfNotPresent
+          name: service2
+      restartPolicy: Always
