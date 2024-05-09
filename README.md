@@ -34,7 +34,7 @@ You can find the Docker images on Docker Hub at the following link:
 ## Repository Structure
 
 - `backend/`: Contains the code for the backend service, including Flask application files and database connection setup.
-- `frontend/`: Contains the code for the frontend service, including HTML, CSS, and JavaScript files for the user interface.
+- `frontend/`: Contains the code for the frontend service, including Flask application, pandas for dataframe stucture and a bit of HTML for the render.
 - `screenshots/`: Includes screenshot of the running app.
 
 ## Docker App run command
