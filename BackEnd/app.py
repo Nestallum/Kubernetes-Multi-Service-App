@@ -14,7 +14,7 @@ db = mysql.connector.connect(
 cursor = db.cursor()
 
 @app.route('/')
-def get_data():
+def get_data_from_db():
     # Execute a query to fetch data from the database
     cursor.execute("SELECT * FROM db.students")
     # Fetch all the result rows

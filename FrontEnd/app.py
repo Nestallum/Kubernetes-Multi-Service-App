@@ -12,7 +12,7 @@ def generate_html_from_dataframe(df):
 
 
 @app.route('/')
-def get_data_from_service1():
+def get_data_from_backend():
     response = requests.get(SERVICE1_URL)
     data = response.json()
     df = pd.DataFrame(data)
