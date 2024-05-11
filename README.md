@@ -1,5 +1,5 @@
 # Kubernetes-Multi-Service-App
-Local Kubernetes Multi-Service Application with Ingress for API Gateway and database integration.
+Local Kubernetes Multi-Service Application with Ingress for API Gateway and database integration with RBAC management.
 This repository houses a Dockerized multi-service web application featuring both a backend and a frontend component. The backend, built with Flask, interacts with a local MySQL database to fetch data, while the frontend serves as the user interface, making requests to the backend and displaying retrieved data.
 
 ## Docker images
@@ -35,6 +35,7 @@ You can find the Docker images on Docker Hub at the following link:
 
 - `backend/`: Contains the code for the backend service, including Flask application files and database connection setup.
 - `frontend/`: Contains the code for the frontend service, including Flask application, pandas for dataframe stucture and a bit of HTML for the render.
+- `yaml/`: Includes YAML files for Kubernetes services, deployments, and RBAC configurations.
 - `screenshots/`: Includes screenshot of the running app.
 
 ## Docker App run command
