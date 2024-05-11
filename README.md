@@ -35,7 +35,7 @@ You can find the Docker images on Docker Hub at the following link:
 
 - `backend/`: Contains the code for the backend service, including Flask application files and database connection setup.
 - `frontend/`: Contains the code for the frontend service, including Flask application, pandas for dataframe stucture and a bit of HTML for the render.
-- `yaml/`: Includes YAML files for Kubernetes services, deployments, and RBAC configurations.
+- `yaml/`: Includes YAML files for Kubernetes services, deployments, RBAC configurations, and Ingress gateway setup.
 - `screenshots/`: Includes screenshot of the running app.
 
 ## Docker App run command
