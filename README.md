@@ -47,7 +47,7 @@ To run this Python application in a browser, you can use the following command:
         minikube addons enable ingress-dns
         minikube tunnel
 
-Click [here](https://github.com/Nestallum/Kubernetes-Multi-Service-App/blob/main/Screenshots/ingress.png) to view the execution of the application using Ingress.
+Click [here](https://github.com/Nestallum/Kubernetes-Multi-Service-App/blob/main/Screenshots/running-app-using-ingress.png) to view the execution of the application using Ingress.
 
 ## Authors
 - LATTAB Nassim
